@@ -11,7 +11,8 @@
 
 @media (max-width:768px) {
   .header {
-    padding: 16px
+    padding: 16px;
+    flex-wrap:wrap;
   }
 }
 
@@ -19,6 +20,12 @@
   color:#f0f2f5;
   font-weight: 600;
   font-size:19px
+}
+
+@media (max-width:768px) {
+  .logo {
+    flex:1;
+  }
 }
 
 
@@ -30,12 +37,15 @@
   padding:10px 15px;
   width:60%;
   align-items: center;
+  
 }
 
 @media (max-width:768px) {
   .input {
      width:100%;
      padding: 15px;
+     order:3;
+    margin-top:16px;
   }
 }
 
