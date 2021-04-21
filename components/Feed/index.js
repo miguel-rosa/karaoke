@@ -14,8 +14,6 @@ const Feed = ({ data }) => {
   }, [search, data])
 
   const handleTextSearch = (data) => {
-    console.log('data', data.items[0].snippet.title);
-    console.log('test', data.items.filter( item => item.snippet.title.toUpperCase().includes(search.toUpperCase())))
     setVideos(data.items.filter( item => item.snippet.title.toUpperCase().includes(search.toUpperCase())))
   }
 
