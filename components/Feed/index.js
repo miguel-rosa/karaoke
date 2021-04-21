@@ -9,7 +9,7 @@ const Feed = ({ data }) => {
   const [videos, setVideos] = useState(data.items);
  
   useEffect(() => {
-    if(!search) setVideos(data.items);
+    if(!search) return setVideos(data.items);
     handleTextSearch(data)
   }, [search, data])
 
